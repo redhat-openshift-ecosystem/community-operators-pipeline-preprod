@@ -23,9 +23,14 @@ metadata:
     containerImage: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
     createdAt: 2023-08-22T12:00:00Z
     support: ACME Ltd.
+    categories: Cloud Provider
+    repository: https://example.com/foo/bar.git
+    description: |
+      Et sapiente et incidunt animi. Ut molestias perferendis qui eaque laborum sit dolor. Beatae ut quae molestiae quis. Saepe est et soluta aliquam quaerat voluptatibus non voluptate.
   name: operator-e2e.0.0.101
   namespace: placeholder
 spec:
+  minKubeVersion: 1.18.0
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
