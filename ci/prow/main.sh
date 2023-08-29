@@ -2,8 +2,8 @@
 echo "Prow script initiated."
 oc whoami
 
-if [ -f /var/run/cred/operator_bundle_bot_github_token ]; then
-  echo "Operator bot github token available."
+if [ -f /var/run/cred/mock_key ]; then
+  echo "Mock value: $(cat /var/run/cred/mock_key)"
 else
   >&2 echo "Operator bot github token NOT available!"
   exit 1
