@@ -2,7 +2,7 @@
 # The catalog for intended distribution.
 organization: community-operators
 
-# list of repo maintainers for approval 
+# List of repository maintainers for approval 
 # in case of missing reviewers in ci.yaml file
 maintainers:
   - mporrato
