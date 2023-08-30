@@ -1,3 +1,11 @@
 ---
 # The catalog for intended distribution.
 organization: community-operators
+
+maintainers:
+  - mporrato
+  - ezopezo
+  - tomasbakk
+  - haripate
+  - Allda
+  - jedinym
