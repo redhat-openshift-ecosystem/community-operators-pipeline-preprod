@@ -3,6 +3,7 @@ ARG USER_UID=1000
 # ci-operator requires to include a git executable in $PATH
 ENV PATH="/usr/bin:${PATH}"
 USER root
+RUN dnf install -y gh  # temporary fix until ISV-3494 gets deployed
 # permissions changed for /go directory because it is ci-operator internal requirement
 RUN mkdir -m 0777 /go
 USER "${USER_UID}"
