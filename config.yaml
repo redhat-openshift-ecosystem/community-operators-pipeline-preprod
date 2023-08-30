@@ -1,3 +1,8 @@
 ---
 # The catalog for intended distribution.
 organization: community-operators
+
+maintainers:
+  - ezopezo
+  - tomasbakk
+  
