@@ -2,7 +2,7 @@
 # The catalog for intended distribution.
 organization: community-operators
 
+# maintainers
 maintainers:
   - ezopezo
   - tomasbakk
-  
