@@ -1,3 +1,13 @@
 ---
 # The catalog for intended distribution.
 organization: community-operators
+
+# List of repository maintainers for approval 
+# in case of missing reviewers in ci.yaml file
+maintainers:
+  - mporrato
+  - ezopezo
+  - tomasbakk
+  - haripate
+  - Allda
+  - jedinym
