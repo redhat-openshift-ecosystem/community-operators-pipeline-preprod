@@ -1,4 +1,10 @@
 ---
-reviewers:
-  - ezopezo
-  - tomasbakk
+something:
+  - one
+  - two
+  - three
+
+somethingelse:
+  - three
+  - two
+  - one
