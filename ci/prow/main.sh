@@ -61,7 +61,7 @@ gh pr edit "${pr_url}" \
 
 echo "Starting test at $(date)"
 
-sleep 15    # Actual test should be triggered here
+python3 operatorcert/entrypoints/start_community_prow.py
 
 gh pr edit "${pr_url}" \
     --remove-label "ocp/${OCP_CLUSTER_VERSION}/running" \
