@@ -1,3 +1,6 @@
 ---
 reviewers:
   - tomasbakk
+
+change_test:
+  - test
