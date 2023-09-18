@@ -27,7 +27,7 @@ metadata:
     repository: https://example.com/foo/bar.git
     description: |
       Et sapiente et incidunt animi. Ut molestias perferendis qui eaque laborum sit dolor. Beatae ut quae molestiae quis. Saepe est et soluta aliquam quaerat voluptatibus non voluptate.
-  name: operator-e2e.0.1.101
+  name: operator-demo.0.0.100
   namespace: placeholder
 spec:
   minKubeVersion: 1.18.0
@@ -39,8 +39,8 @@ spec:
       kind: DemoResource
       name: demoresources.tools.opdev.io
       version: v1
-  description: A operator-e2e with a minimal reconciliation function, for testing basic operator installation and validation workflows.
-  displayName: operator-e2e
+  description: A operator-demo with a minimal reconciliation function, for testing basic operator installation and validation workflows.
+  displayName: operator-demo
   icon:
   - base64data: iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoAQMAAABTru9CAAAAA1BMVEUAAP+KeNJXAAAADUlEQVQYGWMYBUMSAAABuAAB2T8o+AAAAABJRU5ErkJggg==
     mediatype: image/png
@@ -194,7 +194,7 @@ spec:
   - hello
   - world
   links:
-  - name: operator-e2e
+  - name: operator-demo
     url: https://github.com/opdev/hello-world-operator
   maintainers:
   - email: apal@redhat.com
@@ -203,8 +203,7 @@ spec:
   provider:
     name: Red Hat Ecosystem Engineering
     url: github.com/opdev
-  version: 0.1.101
-  replaces: operator-e2e.0.1.100
+  version: 0.0.100
   relatedImages:
   - name: kube-rbac-proxy
     image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
