@@ -27,7 +27,7 @@ metadata:
     repository: https://example.com/foo/bar.git
     description: |
       Et sapiente et incidunt animi. Ut molestias perferendis qui eaque laborum sit dolor. Beatae ut quae molestiae quis. Saepe est et soluta aliquam quaerat voluptatibus non voluptate.
-  name: operator-e2e.0.0.101
+  name: operator-e2e.0.0.102
   namespace: placeholder
 spec:
   minKubeVersion: 1.18.0
@@ -203,7 +203,7 @@ spec:
   provider:
     name: Red Hat Ecosystem Engineering
     url: github.com/opdev
-  version: 0.0.101
+  version: 0.0.102
   replaces: operator-e2e.0.0.100
   relatedImages:
   - name: kube-rbac-proxy
