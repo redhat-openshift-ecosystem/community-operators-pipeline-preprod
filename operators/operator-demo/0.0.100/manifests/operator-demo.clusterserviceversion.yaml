@@ -39,7 +39,7 @@ spec:
       kind: DemoResource
       name: demoresources.tools.opdev.io
       version: v1
-  description: A operator-demo with a minimal reconciliation function, for testing basic operator installation and validation workflows.
+  description: A operator-demo with a minimal reconciliation function, for testing basic operator installation and validation  workflows.
   displayName: operator-demo
   icon:
   - base64data: iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoAQMAAABTru9CAAAAA1BMVEUAAP+KeNJXAAAADUlEQVQYGWMYBUMSAAABuAAB2T8o+AAAAABJRU5ErkJggg==
