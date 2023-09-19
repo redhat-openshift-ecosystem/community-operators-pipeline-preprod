@@ -6,3 +6,6 @@ organization: community-operators
 # in case of missing reviewers in ci.yaml file
 maintainers:
   - tomasbakk
+
+test:
+  - test
