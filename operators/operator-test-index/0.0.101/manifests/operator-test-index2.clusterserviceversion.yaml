@@ -27,7 +27,7 @@ metadata:
     repository: https://example.com/foo/bar.git
     description: |
       Et sapiente et incidunt animi. Ut molestias perferendis qui eaque laborum sit dolor. Beatae ut quae molestiae quis. Saepe est et soluta aliquam quaerat voluptatibus non voluptate.
-  name: operator-test-index.0.0.100
+  name: operator-test-index2.0.0.100
   namespace: placeholder
 spec:
   minKubeVersion: 1.18.0
@@ -39,8 +39,8 @@ spec:
       kind: DemoResource
       name: demoresources.tools.opdev.io
       version: v1
-  description: A operator-test-index with a minimal reconciliation function, for testing basic operator installation and validation  workflows.
-  displayName: operator-test-index
+  description: A operator-test-index2 with a minimal reconciliation function, for testing basic operator installation and validation  workflows.
+  displayName: operator-test-index2
   icon:
   - base64data: iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoAQMAAABTru9CAAAAA1BMVEUAAP+KeNJXAAAADUlEQVQYGWMYBUMSAAABuAAB2T8o+AAAAABJRU5ErkJggg==
     mediatype: image/png
@@ -194,7 +194,7 @@ spec:
   - hello
   - world
   links:
-  - name: operator-test-index
+  - name: operator-test-index2
     url: https://github.com/opdev/hello-world-operator
   maintainers:
   - email: apal@redhat.com
