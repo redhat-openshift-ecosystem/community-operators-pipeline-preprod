@@ -1,4 +1,4 @@
-FROM quay.io/redhat-isv/operator-pipelines-images:latest
+FROM quay.io/rh_ee_tbak/operator-pipeline-test:latest
 ARG USER_UID=1000
 # ci-operator requires to include a git executable in $PATH
 ENV PATH="/usr/bin:${PATH}"
