@@ -194,7 +194,7 @@ spec:
   - hello
   - world
   links:
-  - name: operator-demo
+  - name: operator-e2e
     url: https://github.com/opdev/hello-world-operator
   maintainers:
   - email: apal@redhat.com
