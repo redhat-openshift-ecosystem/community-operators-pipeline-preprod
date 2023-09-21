@@ -61,7 +61,8 @@ gh pr edit "${pr_url}" \
 
 echo "Starting test at $(date)"
 
-sleep 15    # Actual test should be triggered here
+# running community-prow tests
+community-prow
 
 gh pr edit "${pr_url}" \
     --remove-label "ocp/${OCP_CLUSTER_VERSION}/running" \
