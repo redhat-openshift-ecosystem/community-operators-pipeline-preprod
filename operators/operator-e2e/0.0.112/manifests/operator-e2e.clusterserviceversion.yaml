@@ -27,7 +27,7 @@ metadata:
     repository: https://example.com/foo/bar.git
     description: |
       Et sapiente et incidunt animi. Ut molestias perferendis qui eaque laborum sit dolor. Beatae ut quae molestiae quis. Saepe est et soluta aliquam quaerat voluptatibus non voluptate.
-  name: operator-demo.0.0.100
+  name: operator-e2e.0.0.112
   namespace: placeholder
 spec:
   minKubeVersion: 1.18.0
@@ -40,7 +40,7 @@ spec:
       name: demoresources.tools.opdev.io
       version: v1
   description: A operator-demo with a minimal reconciliation function, for testing basic operator installation and validation  workflows.
-  displayName: operator-demo
+  displayName: operator-e2e
   icon:
   - base64data: iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoAQMAAABTru9CAAAAA1BMVEUAAP+KeNJXAAAADUlEQVQYGWMYBUMSAAABuAAB2T8o+AAAAABJRU5ErkJggg==
     mediatype: image/png
