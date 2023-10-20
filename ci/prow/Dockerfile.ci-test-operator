@@ -1,8 +1,0 @@
-FROM quay.io/redhat-isv/operator-pipelines-images:latest
-ARG USER_UID=1000
-# ci-operator requires to include a git executable in $PATH
-ENV PATH="/usr/bin:${PATH}"
-USER root
-# permissions changed for /go directory because it is ci-operator internal requirement
-RUN mkdir -m 0777 /go
-USER "${USER_UID}"
