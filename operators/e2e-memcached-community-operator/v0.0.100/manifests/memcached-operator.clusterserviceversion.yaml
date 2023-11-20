@@ -6,8 +6,8 @@ metadata:
     alm-examples: |-
       [
         {
-          "apiVersion": "acm.services.k8s.aws/v1alpha1",
-          "kind": "Certificate",
+          "apiVersion": "cache.quay.io/v1alpha1",
+          "kind": "Memcached",
           "metadata": {
             "name": "example"
           },
@@ -24,7 +24,7 @@ metadata:
     support: Community
     description: AWS ACM controller is a service controller for managing ACM resources
       in Kubernetes
-  name: e2e-memcached-community-operator.0.0.100
+  name: e2e-memcached-community-operator.v0.0.100
   namespace: placeholder
 spec:
   relatedImages:
@@ -267,4 +267,4 @@ spec:
   provider:
     name: RedHat
     url: www.redhat.com
-  version: 0.0.100
+  version: v0.0.100

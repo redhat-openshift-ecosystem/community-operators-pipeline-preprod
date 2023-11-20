@@ -4,6 +4,7 @@ kind: CustomResourceDefinition
 metadata:
   creationTimestamp: null
   name: memcacheds.cache.quay.io
+  description: Memcached is the Schema for the memcacheds API
 spec:
   group: cache.quay.io
   names:
