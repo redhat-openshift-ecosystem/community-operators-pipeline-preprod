@@ -267,4 +267,4 @@ spec:
   provider:
     name: RedHat
     url: www.redhat.com
-  version: v0.0.100
+  version: 0.0.100
