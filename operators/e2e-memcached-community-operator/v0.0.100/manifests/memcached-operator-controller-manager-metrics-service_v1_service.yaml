@@ -13,6 +13,7 @@ metadata:
     control-plane: controller-manager
   name: e2e-memcached-community-operator-controller-manager-metrics-service
 spec:
+  description: Memcached is the Schema for the memcacheds API
   ports:
   - name: https
     port: 8443
