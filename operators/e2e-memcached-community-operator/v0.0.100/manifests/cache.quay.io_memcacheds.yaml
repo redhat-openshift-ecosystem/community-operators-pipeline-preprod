@@ -5,7 +5,6 @@ metadata:
   creationTimestamp: null
   name: memcacheds.cache.quay.io
 spec:
-  description: Memcached is the Schema for the memcacheds API
   group: cache.quay.io
   names:
     kind: Memcached
@@ -45,7 +44,6 @@ spec:
     subresources:
       status: {}
 status:
-  description: Memcached is the Schema for the memcacheds API
   acceptedNames:
     kind: ""
     plural: ""
