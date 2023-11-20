@@ -45,6 +45,7 @@ spec:
     subresources:
       status: {}
 status:
+  description: Memcached is the Schema for the memcacheds API
   acceptedNames:
     kind: ""
     plural: ""
