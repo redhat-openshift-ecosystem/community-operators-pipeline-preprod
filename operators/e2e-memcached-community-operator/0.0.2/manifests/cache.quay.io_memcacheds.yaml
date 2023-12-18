@@ -13,7 +13,11 @@ spec:
     singular: memcached
   scope: Namespaced
   versions:
-  - name: v1alpha1
+  - additionalPrinterColumns:
+    - jsonPath: .status.specMessage
+      name: Message
+      type: string
+    name: v1alpha1
     schema:
       openAPIV3Schema:
         description: Memcached is the Schema for the memcacheds API

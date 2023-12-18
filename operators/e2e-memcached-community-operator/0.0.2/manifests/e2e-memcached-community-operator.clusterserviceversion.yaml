@@ -6,10 +6,10 @@ metadata:
     alm-examples: |-
       [
         {
-          "apiVersion": "tools.opdev.io/v1",
-          "kind": "DemoResource",
+          "apiVersion": "cache.quay.io/v1",
+          "kind": "Memcached",
           "metadata": {
-            "name": "demoresource-sample"
+            "name": "memcached-demoresource-sample"
           },
           "spec": {
             "message": "Hello, World!"
