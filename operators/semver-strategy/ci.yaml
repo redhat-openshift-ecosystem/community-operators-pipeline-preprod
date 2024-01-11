@@ -1,3 +1,4 @@
 updateGraph: semver-mode
 reviewers:
-  - Allda
+  - mporrato
+  - ezopezo
