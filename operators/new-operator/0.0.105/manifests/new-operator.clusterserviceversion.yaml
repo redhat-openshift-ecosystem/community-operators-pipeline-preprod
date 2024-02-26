@@ -29,7 +29,7 @@ spec:
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
-    - description: DemoResource is the Schema for the demoresources API.
+    - description: DemoResource is the Schema for the demoresources API
       displayName: Demo Resource
       kind: DemoResource
       name: demoresources.tools.opdev.io
