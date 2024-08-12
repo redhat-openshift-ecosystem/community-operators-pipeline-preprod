@@ -1,7 +1,9 @@
-updateGraph: semver-mode
+---
+fbc:
+  enabled: true
 reviewers:
-  - Allda
-  - ezopezo
-  - haripate
-  - mporrato
-  - RichardPlesnik
+- Allda
+- ezopezo
+- haripate
+- mporrato
+- RichardPlesnik
