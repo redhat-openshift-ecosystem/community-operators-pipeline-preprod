@@ -16,3 +16,4 @@ annotations:
 
   # OpenShift annotations
   com.redhat.openshift.versions: v4.14-v4.17
+  
