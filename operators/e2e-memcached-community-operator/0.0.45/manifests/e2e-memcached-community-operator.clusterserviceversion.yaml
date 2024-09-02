@@ -22,7 +22,7 @@ metadata:
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
     support: ACME Ltd.
     containerImage: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
-  name: e2e-memcached-community-operator.0.0.44
+  name: e2e-memcached-community-operator.0.0.45
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -250,8 +250,8 @@ spec:
   - name: Memcached Operator
     url: https://e2e-memcached-community-operator.domain
   maintainers:
-  - email: apal@redhat.com
-    name: avnish
+  - email: vmulaje@redhat.com
+    name: Viksss
   maturity: alpha
   provider:
     name: RedHat
