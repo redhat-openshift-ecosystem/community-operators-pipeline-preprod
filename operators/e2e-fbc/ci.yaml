@@ -1,1 +1,7 @@
-cert_project_id: 66cd7d3fad2ad9fb013a9800
+updateGraph: semver-mode
+reviewers:
+  - opcert
+  - vikasmulaje
+  - Allda
+  - ezopezo
+  - haripate
