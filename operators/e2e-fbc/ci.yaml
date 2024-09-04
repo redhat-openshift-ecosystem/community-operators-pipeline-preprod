@@ -1,7 +1,8 @@
-updateGraph: semver-mode
+fbc:
+  enabled: true
 reviewers:
-  - opcert
-  - vikasmulaje
-  - Allda
-  - ezopezo
-  - haripate
+- opcert
+- vikasmulaje
+- Allda
+- ezopezo
+- haripate
