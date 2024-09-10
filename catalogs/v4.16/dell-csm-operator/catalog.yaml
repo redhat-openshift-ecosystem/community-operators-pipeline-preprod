@@ -12,19 +12,7 @@ name: alpha
 package: dell-csm-operator
 schema: olm.channel
 ---
-entries:
-- name: dell-csm-operator.v0.1.0
-name: beta
-package: dell-csm-operator
-schema: olm.channel
----
-entries:
-- name: dell-csm-operator.v0.1.0
-name: gama
-package: dell-csm-operator
-schema: olm.channel
----
-image: quay.io/community-operator-pipeline-stage/dell-csm-operator@sha256:72cd2b223fae420e460171348abde726505d6f0f64e684055434284dc4436e34
+image: quay.io/openshift-community-operators/dell-csm-operator@sha256:02e4e773bebc12414f4db0105bc760f64ca39ca29fc54707fb7dbafd195f3a70
 name: dell-csm-operator.v0.1.0
 package: dell-csm-operator
 properties:
@@ -40,154 +28,63 @@ properties:
 - type: olm.csv.metadata
   value:
     annotations:
-      alm-examples: |-
-        [
-          {
-            "apiVersion": "storage.dell.com/v1alpha1",
-            "kind": "ContainerStorageModule",
-            "metadata": {
-              "name": "test-isilon",
-              "namespace": "test-isilon"
-            },
-            "spec": {
-              "driver": {
-                "authSecret": "test-isilon-creds",
-                "common": {
-                  "envs": [
-                    {
-                      "name": "X_CSI_VERBOSE",
-                      "value": "1"
-                    },
-                    {
-                      "name": "X_CSI_ISI_PORT",
-                      "value": "8080"
-                    },
-                    {
-                      "name": "X_CSI_ISI_PATH",
-                      "value": "/ifs/data/csi"
-                    },
-                    {
-                      "name": "X_CSI_ISI_NO_PROBE_ON_START",
-                      "value": "false"
-                    },
-                    {
-                      "name": "X_CSI_ISI_AUTOPROBE",
-                      "value": "true"
-                    },
-                    {
-                      "name": "X_CSI_ISI_SKIP_CERTIFICATE_VALIDATION",
-                      "value": "true"
-                    },
-                    {
-                      "name": "X_CSI_CUSTOM_TOPOLOGY_ENABLED",
-                      "value": "false"
-                    },
-                    {
-                      "name": "KUBELET_CONFIG_DIR",
-                      "value": "/var/lib/kubelet"
-                    },
-                    {
-                      "name": "CERT_SECRET_COUNT",
-                      "value": "1"
-                    },
-                    {
-                      "name": "CSI_LOG_LEVEL",
-                      "value": "debug"
-                    }
-                  ],
-                  "image": "dellemc/csi-isilon:v2.2.0",
-                  "imagePullPolicy": "IfNotPresent"
-                },
-                "configVersion": "v2.2.0",
-                "controller": {
-                  "envs": [
-                    {
-                      "name": "X_CSI_ISI_QUOTA_ENABLED",
-                      "value": "true"
-                    },
-                    {
-                      "name": "X_CSI_ISI_ACCESS_ZONE",
-                      "value": "System"
-                    },
-                    {
-                      "name": "X_CSI_ISI_VOLUME_PATH_PERMISSIONS",
-                      "value": "0777"
-                    },
-                    {
-                      "name": "X_CSI_HEALTH_MONITOR_ENABLED",
-                      "value": "false"
-                    }
-                  ]
-                },
-                "csiDriverSpec": {
-                  "fSGroupPolicy": "ReadWriteOnceWithFSType"
-                },
-                "csiDriverType": "isilon",
-                "dnsPolicy": "ClusterFirstWithHostNet",
-                "forceRemoveDriver": true,
-                "node": {
-                  "envs": [
-                    {
-                      "name": "X_CSI_MAX_VOLUMES_PER_NODE",
-                      "value": "0"
-                    },
-                    {
-                      "name": "X_CSI_ALLOWED_NETWORKS",
-                      "value": ""
-                    },
-                    {
-                      "name": "X_CSI_HEALTH_MONITOR_ENABLED",
-                      "value": "false"
-                    }
-                  ]
-                },
-                "replicas": 2,
-                "sideCars": [
-                  {
-                    "args": [
-                      "--volume-name-prefix=csipscale"
-                    ],
-                    "name": "provisioner"
-                  },
-                  {
-                    "args": [
-                      "--monitor-interval=60s"
-                    ],
-                    "enabled": false,
-                    "name": "external-health-monitor"
-                  }
-                ]
-              },
-              "modules": [
-                {
-                  "components": [
-                    {
-                      "envs": [
-                        {
-                          "name": "PROXY_HOST",
-                          "value": ""
-                        },
-                        {
-                          "name": "INSECURE",
-                          "value": "true"
-                        }
-                      ],
-                      "image": "dellemc/csm-authorization-sidecar:v1.2.0",
-                      "name": "karavi-authorization-proxy"
-                    }
-                  ],
-                  "configVersion": "v1.2.0",
-                  "enabled": false,
-                  "name": "authorization"
-                }
-              ]
-            }
-          }
-        ]
+      alm-examples: "[\n  {\n    \"apiVersion\": \"storage.dell.com/v1alpha1\",\n\
+        \    \"kind\": \"ContainerStorageModule\",\n    \"metadata\": {\n      \"\
+        name\": \"test-isilon\",\n      \"namespace\": \"test-isilon\"\n    },\n \
+        \   \"spec\": {\n      \"driver\": {\n        \"authSecret\": \"test-isilon-creds\"\
+        ,\n        \"common\": {\n          \"envs\": [\n            {\n         \
+        \     \"name\": \"X_CSI_VERBOSE\",\n              \"value\": \"1\"\n     \
+        \       },\n            {\n              \"name\": \"X_CSI_ISI_PORT\",\n \
+        \             \"value\": \"8080\"\n            },\n            {\n       \
+        \       \"name\": \"X_CSI_ISI_PATH\",\n              \"value\": \"/ifs/data/csi\"\
+        \n            },\n            {\n              \"name\": \"X_CSI_ISI_NO_PROBE_ON_START\"\
+        ,\n              \"value\": \"false\"\n            },\n            {\n   \
+        \           \"name\": \"X_CSI_ISI_AUTOPROBE\",\n              \"value\": \"\
+        true\"\n            },\n            {\n              \"name\": \"X_CSI_ISI_SKIP_CERTIFICATE_VALIDATION\"\
+        ,\n              \"value\": \"true\"\n            },\n            {\n    \
+        \          \"name\": \"X_CSI_CUSTOM_TOPOLOGY_ENABLED\",\n              \"\
+        value\": \"false\"\n            },\n            {\n              \"name\"\
+        : \"KUBELET_CONFIG_DIR\",\n              \"value\": \"/var/lib/kubelet\"\n\
+        \            },\n            {\n              \"name\": \"CERT_SECRET_COUNT\"\
+        ,\n              \"value\": \"1\"\n            },\n            {\n       \
+        \       \"name\": \"CSI_LOG_LEVEL\",\n              \"value\": \"debug\"\n\
+        \            }\n          ],\n          \"image\": \"dellemc/csi-isilon:v2.2.0\"\
+        ,\n          \"imagePullPolicy\": \"IfNotPresent\"\n        },\n        \"\
+        configVersion\": \"v2.2.0\",\n        \"controller\": {\n          \"envs\"\
+        : [\n            {\n              \"name\": \"X_CSI_ISI_QUOTA_ENABLED\",\n\
+        \              \"value\": \"true\"\n            },\n            {\n      \
+        \        \"name\": \"X_CSI_ISI_ACCESS_ZONE\",\n              \"value\": \"\
+        System\"\n            },\n            {\n              \"name\": \"X_CSI_ISI_VOLUME_PATH_PERMISSIONS\"\
+        ,\n              \"value\": \"0777\"\n            },\n            {\n    \
+        \          \"name\": \"X_CSI_HEALTH_MONITOR_ENABLED\",\n              \"value\"\
+        : \"false\"\n            }\n          ]\n        },\n        \"csiDriverSpec\"\
+        : {\n          \"fSGroupPolicy\": \"ReadWriteOnceWithFSType\"\n        },\n\
+        \        \"csiDriverType\": \"isilon\",\n        \"dnsPolicy\": \"ClusterFirstWithHostNet\"\
+        ,\n        \"forceRemoveDriver\": true,\n        \"node\": {\n          \"\
+        envs\": [\n            {\n              \"name\": \"X_CSI_MAX_VOLUMES_PER_NODE\"\
+        ,\n              \"value\": \"0\"\n            },\n            {\n       \
+        \       \"name\": \"X_CSI_ALLOWED_NETWORKS\",\n              \"value\": \"\
+        \"\n            },\n            {\n              \"name\": \"X_CSI_HEALTH_MONITOR_ENABLED\"\
+        ,\n              \"value\": \"false\"\n            }\n          ]\n      \
+        \  },\n        \"replicas\": 2,\n        \"sideCars\": [\n          {\n  \
+        \          \"args\": [\n              \"--volume-name-prefix=csipscale\"\n\
+        \            ],\n            \"name\": \"provisioner\"\n          },\n   \
+        \       {\n            \"args\": [\n              \"--monitor-interval=60s\"\
+        \n            ],\n            \"enabled\": false,\n            \"name\": \"\
+        external-health-monitor\"\n          }\n        ]\n      },\n      \"modules\"\
+        : [\n        {\n          \"components\": [\n            {\n             \
+        \ \"envs\": [\n                {\n                  \"name\": \"PROXY_HOST\"\
+        ,\n                  \"value\": \"\"\n                },\n               \
+        \ {\n                  \"name\": \"INSECURE\",\n                  \"value\"\
+        : \"true\"\n                }\n              ],\n              \"image\":\
+        \ \"dellemc/csm-authorization-sidecar:v1.2.0\",\n              \"name\": \"\
+        karavi-authorization-proxy\"\n            }\n          ],\n          \"configVersion\"\
+        : \"v1.2.0\",\n          \"enabled\": false,\n          \"name\": \"authorization\"\
+        \n        }\n      ]\n    }\n  }\n]"
       capabilities: Basic Install
       categories: Storage
-      containerImage: docker.io/dellemc/dell-csm-operator:v0.1.0
-      createdAt: "2022-03-29T11:59:59Z"
+      containerImage: dellemc/dell-csm-operator:v0.1.0
+      createdAt: '2022-03-29T11:59:59Z'
       operators.operatorframework.io/builder: operator-sdk-v1.14.0+git
       operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
       repository: https://github.com/dell/csm-operator
@@ -481,9 +378,9 @@ properties:
       url: https://github.com/dell/csm-operator
 relatedImages:
 - image: dellemc/dell-csm-operator:v0.1.0
-  name: ""
+  name: ''
 - image: gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
-  name: ""
-- image: quay.io/community-operator-pipeline-stage/dell-csm-operator@sha256:72cd2b223fae420e460171348abde726505d6f0f64e684055434284dc4436e34
-  name: ""
+  name: ''
+- image: quay.io/openshift-community-operators/dell-csm-operator@sha256:02e4e773bebc12414f4db0105bc760f64ca39ca29fc54707fb7dbafd195f3a70
+  name: ''
 schema: olm.bundle

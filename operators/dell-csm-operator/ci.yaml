@@ -1,6 +1,5 @@
 ---
 fbc:
   enabled: true
-
 reviewers:
-  - mporrato
+- mporrato
