@@ -8,4 +8,3 @@ Candidate:
 Stable:
   Bundles:
   - Image: quay.io/community-operator-pipeline-stage/e2e-fbc:0.0.2
-  - Image: quay.io/community-operator-pipeline-stage/e2e-fbc:0.0.4

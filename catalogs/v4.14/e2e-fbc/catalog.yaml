@@ -23,18 +23,12 @@ schema: olm.channel
 ---
 entries:
 - name: e2e-fbc.0.0.2
-- name: e2e-fbc.0.0.4
-  skips:
-  - e2e-fbc.0.0.2
 name: stable-v0
 package: e2e-fbc
 schema: olm.channel
 ---
 entries:
 - name: e2e-fbc.0.0.2
-- name: e2e-fbc.0.0.4
-  skips:
-  - e2e-fbc.0.0.2
 name: stable-v0.0
 package: e2e-fbc
 schema: olm.channel
