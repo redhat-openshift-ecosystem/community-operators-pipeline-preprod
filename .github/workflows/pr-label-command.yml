@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   skip-test-labeler:
-    uses: redhat-openshift-ecosystem/github-workflows/.github/workflows/label-command.yml@ISV-4528
+    uses: redhat-openshift-ecosystem/github-workflows/.github/workflows/label-command.yml@main
