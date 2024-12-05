@@ -13,3 +13,6 @@ tests:
   - name: DeployableByOLM
     ignore_operators:
       - ^non-deployable-operator.*
+
+allowed_bundle_registries:
+  - quay.io/made-up-registry/
