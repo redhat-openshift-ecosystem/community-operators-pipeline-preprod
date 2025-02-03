@@ -1,3 +1,8 @@
 ---
 fbc:
   enabled: true
+
+  catalog_mapping:
+    - template_name: basic.yaml
+      catalog_names: ["v4.14", "v4.15", "v4.16"]
+      type: olm.template.basic

@@ -1,0 +1,13 @@
+---
+schema: olm.template.basic
+entries:
+- schema: olm.package
+  name: fbc-test-operator
+  defaultChannel: foo
+- schema: olm.channel
+  name: foo
+  package: fbc-test-operator
+  entries:
+  - name: fbc-test-operator.0.0.100
+- schema: olm.bundle
+  image: quay.io/community-operator-pipeline-stage/fbc-test-operator:0.0.100
