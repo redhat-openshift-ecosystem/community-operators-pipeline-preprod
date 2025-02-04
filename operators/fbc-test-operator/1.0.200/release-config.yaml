@@ -1,0 +1,8 @@
+---
+catalog_templates:
+  - template_name: basic.yaml
+    channels: [foo]
+    replaces: fbc-test-operator.0.0.100
+    # replaces: fo-bar.v1
+  # - template_name: semver.yaml
+  #   channels: [Fast, Stable]
