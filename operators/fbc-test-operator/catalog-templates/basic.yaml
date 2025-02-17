@@ -13,9 +13,13 @@ entries:
     replaces: fbc-test-operator.0.0.100
   - name: fbc-test-operator.1.1.200
     replaces: fbc-test-operator.1.0.200
+  - name: fbc-test-operator.1.1.201
+    replaces: fbc-test-operator.1.1.200
 - schema: olm.bundle
   image: quay.io/community-operator-pipeline-stage/fbc-test-operator:0.0.100
 - schema: olm.bundle
   image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.0.200
 - schema: olm.bundle
   image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.200
+- schema: olm.bundle
+  image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.201
