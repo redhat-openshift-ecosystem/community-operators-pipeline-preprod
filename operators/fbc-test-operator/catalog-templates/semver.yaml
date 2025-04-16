@@ -6,9 +6,7 @@ Fast:
   Bundles:
   - Image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.200
   - Image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.201
-  - Image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.202
 Stable:
   Bundles:
   - Image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.200
   - Image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.201
-  - Image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.202
