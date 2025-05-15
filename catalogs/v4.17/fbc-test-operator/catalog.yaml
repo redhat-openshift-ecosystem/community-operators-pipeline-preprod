@@ -1,0 +1,316 @@
+---
+defaultChannel: foo
+name: fbc-test-operator
+schema: olm.package
+---
+entries:
+- name: fbc-test-operator.0.0.100
+- name: fbc-test-operator.1.0.200
+  replaces: fbc-test-operator.0.0.100
+- name: fbc-test-operator.1.1.200
+  replaces: fbc-test-operator.1.0.200
+- name: fbc-test-operator.1.1.201
+  replaces: fbc-test-operator.1.1.200
+name: foo
+package: fbc-test-operator
+schema: olm.channel
+---
+image: quay.io/community-operator-pipeline-stage/fbc-test-operator:0.0.100
+name: fbc-test-operator.0.0.100
+package: fbc-test-operator
+properties:
+- type: olm.gvk
+  value:
+    group: tools.opdev.io
+    kind: DemoResource
+    version: v1
+- type: olm.package
+  value:
+    packageName: fbc-test-operator
+    version: 0.0.100
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "tools.opdev.io/v1",
+            "kind": "DemoResource",
+            "metadata": {
+              "name": "demoresource-sample"
+            },
+            "spec": {
+              "message": "Hello, World!"
+            }
+          }
+        ]
+      capabilities: Basic Install
+      olm.skipRange: 0.0.0
+      operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: DemoResource is the Schema for the demoresources API
+        displayName: Demo Resource
+        kind: DemoResource
+        name: demoresources.tools.opdev.io
+        version: v1
+    description: A fbc-test-operator with a minimal reconciliation function, for testing
+      basic operator installation and validation workflows.
+    displayName: fbc-test-operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: false
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: true
+      type: AllNamespaces
+    keywords:
+    - hello
+    - world
+    links:
+    - name: fbc-test-operator
+      url: https://github.com/opdev/hello-world-operator
+    maintainers:
+    - email: apal@redhat.com
+      name: Avnish Pal
+    maturity: alpha
+    provider:
+      name: Red Hat Ecosystem Engineering
+      url: github.com/opdev
+relatedImages:
+- image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
+  name: kube-rbac-proxy
+- image: quay.io/community-operator-pipeline-stage/fbc-test-operator:0.0.100
+  name: ""
+- image: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
+  name: manager
+schema: olm.bundle
+---
+image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.0.200
+name: fbc-test-operator.1.0.200
+package: fbc-test-operator
+properties:
+- type: olm.gvk
+  value:
+    group: tools.opdev.io
+    kind: DemoResource
+    version: v1
+- type: olm.package
+  value:
+    packageName: fbc-test-operator
+    version: 1.0.200
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "tools.opdev.io/v1",
+            "kind": "DemoResource",
+            "metadata": {
+              "name": "demoresource-sample"
+            },
+            "spec": {
+              "message": "Hello, World!"
+            }
+          }
+        ]
+      capabilities: Basic Install
+      olm.skipRange: 0.0.0
+      operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: DemoResource is the Schema for the demoresources API
+        displayName: Demo Resource
+        kind: DemoResource
+        name: demoresources.tools.opdev.io
+        version: v1
+    description: A fbc-test-operator with a minimal reconciliation function, for testing
+      basic operator installation and validation workflows.
+    displayName: fbc-test-operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: false
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: true
+      type: AllNamespaces
+    keywords:
+    - hello
+    - world
+    links:
+    - name: fbc-test-operator
+      url: https://github.com/opdev/hello-world-operator
+    maintainers:
+    - email: apal@redhat.com
+      name: Avnish Pal
+    maturity: alpha
+    provider:
+      name: Red Hat Ecosystem Engineering
+      url: github.com/opdev
+relatedImages:
+- image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
+  name: kube-rbac-proxy
+- image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.0.200
+  name: ""
+- image: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
+  name: manager
+schema: olm.bundle
+---
+image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.200
+name: fbc-test-operator.1.1.200
+package: fbc-test-operator
+properties:
+- type: olm.gvk
+  value:
+    group: tools.opdev.io
+    kind: DemoResource
+    version: v1
+- type: olm.package
+  value:
+    packageName: fbc-test-operator
+    version: 1.1.200
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "tools.opdev.io/v1",
+            "kind": "DemoResource",
+            "metadata": {
+              "name": "demoresource-sample"
+            },
+            "spec": {
+              "message": "Hello, World!"
+            }
+          }
+        ]
+      capabilities: Basic Install
+      olm.skipRange: 0.0.0
+      operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: DemoResource is the Schema for the demoresources API
+        displayName: Demo Resource
+        kind: DemoResource
+        name: demoresources.tools.opdev.io
+        version: v1
+    description: A fbc-test-operator with a minimal reconciliation function, for testing
+      basic operator installation and validation workflows.
+    displayName: fbc-test-operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: false
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: true
+      type: AllNamespaces
+    keywords:
+    - hello
+    - world
+    links:
+    - name: fbc-test-operator
+      url: https://github.com/opdev/hello-world-operator
+    maintainers:
+    - email: apal@redhat.com
+      name: Avnish Pal
+    maturity: alpha
+    provider:
+      name: Red Hat Ecosystem Engineering
+      url: github.com/opdev
+relatedImages:
+- image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
+  name: kube-rbac-proxy
+- image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.200
+  name: ""
+- image: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
+  name: manager
+schema: olm.bundle
+---
+image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.201
+name: fbc-test-operator.1.1.201
+package: fbc-test-operator
+properties:
+- type: olm.gvk
+  value:
+    group: tools.opdev.io
+    kind: DemoResource
+    version: v1
+- type: olm.package
+  value:
+    packageName: fbc-test-operator
+    version: 1.1.201
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "tools.opdev.io/v1",
+            "kind": "DemoResource",
+            "metadata": {
+              "name": "demoresource-sample"
+            },
+            "spec": {
+              "message": "Hello, World!"
+            }
+          }
+        ]
+      capabilities: Basic Install
+      olm.skipRange: 0.0.0
+      operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: DemoResource is the Schema for the demoresources API
+        displayName: Demo Resource
+        kind: DemoResource
+        name: demoresources.tools.opdev.io
+        version: v1
+    description: A fbc-test-operator with a minimal reconciliation function, for testing
+      basic operator installation and validation workflows.
+    displayName: fbc-test-operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: false
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: true
+      type: AllNamespaces
+    keywords:
+    - hello
+    - world
+    links:
+    - name: fbc-test-operator
+      url: https://github.com/opdev/hello-world-operator
+    maintainers:
+    - email: apal@redhat.com
+      name: Avnish Pal
+    maturity: alpha
+    provider:
+      name: Red Hat Ecosystem Engineering
+      url: github.com/opdev
+relatedImages:
+- image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
+  name: kube-rbac-proxy
+- image: quay.io/community-operator-pipeline-stage/fbc-test-operator:1.1.201
+  name: ""
+- image: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
+  name: manager
+schema: olm.bundle
