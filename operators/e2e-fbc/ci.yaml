@@ -12,7 +12,7 @@ fbc:
     catalog_names: [v4.16]
     type: olm.semver
   - template_name: v4.17.yaml
-    catalog_names: [v4.17, v4.18]
+    catalog_names: [v4.17, v4.18, v4.19]
     type: olm.semver
 reviewers:
 - opcert
