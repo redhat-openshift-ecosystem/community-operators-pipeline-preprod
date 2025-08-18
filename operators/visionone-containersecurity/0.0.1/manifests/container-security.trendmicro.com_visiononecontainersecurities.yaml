@@ -95,6 +95,12 @@ spec:
                 properties:
                   bootstrapToken:
                     type: string
+                  clusterName:
+                    type: string
+                  clusterNamePrefix:
+                    type: string
+                  clusterRegistrationKey:
+                    type: boolean
                   endpoint:
                     type: string
                   exclusion:
@@ -108,6 +114,8 @@ spec:
                           type: string
                         type: array
                     type: object
+                  groupId:
+                    type: string
                   inventoryCollection:
                     properties:
                       enabled:
@@ -124,6 +132,8 @@ spec:
                       scanTimeoutSeconds:
                         type: integer
                     type: object
+                  policyId:
+                    type: string
                   runtimeSecurity:
                     properties:
                       enabled:
