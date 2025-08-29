@@ -13,3 +13,7 @@ tests:
   - name: DeployableByOLM
     ignore_operators:
       - ^non-deployable-operator.*
+
+# list of allowed bundle registries
+allowed_registries:
+  - quay.io/community-operator-pipeline-stage
