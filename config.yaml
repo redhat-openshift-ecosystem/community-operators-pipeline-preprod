@@ -14,5 +14,7 @@ tests:
     ignore_operators:
       - ^non-deployable-operator.*
 
-allowed_bundle_registries:
-  - quay.io/made-up-registry/
+index_image:
+  repository: quay.io/redhat-pending/redhat----community-operator-index
+  pending_repository: quay.io/redhat-pending/redhat----community-operator-index-pending
+  public_repository_mirror: registry.stage.redhat.io/redhat/community-operator-index
