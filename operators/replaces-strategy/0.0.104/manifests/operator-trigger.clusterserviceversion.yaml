@@ -26,7 +26,7 @@ metadata:
   name: replaces-strategy.0.0.104
   namespace: placeholder
 spec:
-  replaces: replaces-strategy.0.0.105
+  replaces: replaces-strategy.vv0.0.103
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
