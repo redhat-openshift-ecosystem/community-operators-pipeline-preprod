@@ -1,4 +1,4 @@
-# TESTING FINGERPRINT CHANGE
+# TESTING FINGERPRINT CHANGE #2
 
 # This Makefile provides a set of targets to generate and validate operator catalogs
 # using the Operator Package Manager (opm) tool.
