@@ -23,3 +23,5 @@ However, If you still need to publish the operator bundles with any of these API
 Use the issue tracker in this repository to report bugs.
 
 [k8s-deprecated-guide]: https://kubernetes.io/docs/reference/using-api/deprecation-guide/#v1-22
+
+SOME UNRELATED CHANGE
