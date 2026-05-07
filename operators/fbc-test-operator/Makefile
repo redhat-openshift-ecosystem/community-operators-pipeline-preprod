@@ -1,3 +1,4 @@
+# UNRELATED CHANGE
 # This Makefile provides a set of targets to generate and validate operator catalogs
 # using the Operator Package Manager (opm) tool.
 
