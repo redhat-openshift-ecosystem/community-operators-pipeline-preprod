@@ -24,7 +24,7 @@ name: gama
 package: dell-csm-operator
 schema: olm.channel
 ---
-image: quay.io/made-up-registry/shouldpass@sha256:72cd2b223fae420e460171348abde726505d6f0f64e684055434284dc4436e34
+image: quay.io/made-up-registry/should-pass@sha256:72cd2b223fae420e460171348abde726505d6f0f64e684055434284dc4436e34
 name: dell-csm-operator.v0.1.0
 package: dell-csm-operator
 properties:
