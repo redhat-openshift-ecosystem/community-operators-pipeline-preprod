@@ -95,12 +95,36 @@ spec:
                                 the string literal "$(VAR_NAME)". Escaped references
                                 will never be expanded, regardless of whether the
                                 variable exists or not. Defaults to "".
-                                FAKE_SECRET_FOR_LEAK_DETECTION_TEST aws_access_key_id=AKIAIOSFODNN7EXAMPLE
-                                aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-                                -----BEGIN RSA PRIVATE KEY-----
-                                MIIEowIBAAKCAQEA0Z3VS5JJcds3xfn/ygWyF4P
-                                FAKESECRETLEAKDETECTIONTESTONLYNOTREAL
-                                -----END RSA PRIVATE KEY-----'
+                                LEAKTK_DETECTION_TEST_FIXTURE (intentionally committed)
+                                secret="tatGbrtTXStosGc4kCzfS0Y7FT7g63gwaP2wdz9ig4E="
+                                -----BEGIN PRIVATE KEY-----
+                                MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDQBQR1c+FVU3Ul
+                                6/GVkvK8D2rTLdd4pWXLRWGwE1DP2nF65fvjcHECiYT4HsGXBxAbqbVUS8VFf44Z
+                                TPTFSTnaCfCb7B9r1NIGQb2cI52yI38V31CG0OJwUKqDy0aPbTnZkxqbiWx5k+rI
+                                PG9CXq2D0+TofvHGXt4qtsbPgHLqVYp3I7FJ7BKCW/0EMmsc8NKpTQr/BzdFVcI5
+                                Ni7EX+fPHNzIO2eLNIjczB/SYkAP2orqG0WX+rnBcGvLiKMxDqnm9Cmu6cC/VEYT
+                                aNC3YxzhzNBemz+gGVZsWO0zneUyLDrbIHzGFls57UAdg2vShT4QkF08uexcFeKw
+                                Ww/0QDJRAgMBAAECggEAIHE34c2BzhnnAlQK6GXzn2rUIT1cBn/dIVefxaMtjk0m
+                                N6GYqD8IEPo7l6rMTG6Yj4fnNM9gY9dh5QZAgmhKMnwsX1TzDZEydDFajfhsBrVM
+                                g6/BUlVPi265OTbBuWqyhAFSPAGxvkBYdIQgYfx8GTw5zhzGPkbbZVP+K6x/v5Xx
+                                to5Q9H5jnFMJ/REDtYaNmxfV6/qpmzCfBSESV8UBEgx/BoliJR2YIYk4Gdta9Bbj
+                                zP+cUcUjJdcAurM3nwiatYNiCoHo0RH1xsYUnrcz52pKLNGy9JbepjQHvJKDjb+1
+                                PwNDdPa8GRazT57qhHdYLfWOcYes0Us0h/v8DkfQlQKBgQDqA9YSbzRmSuOAZMcv
+                                eM4qJDV7WMjVSw817l0ysjwnKSkAM5GAVZemEX+vjruyGezR5+bYRLytbqQLQlnB
+                                uRKfxhZKf4U8JrW11MxHfWz2OnU8hiJVjrV4TfkJAoyp0kp6+a0t/xwuWFIxtrJ0
+                                vF55RMYVi4yQRATL/8fd3LPflwKBgQDjj/sN9xyOq0Tu7qQLQ0yVMWArpLnsHNWC
+                                Dft8o2zxPLFvwMKhywvvkIfiBf/zPMn774KDlPpZff/u+4vyBKPOqkTy/+fg6wC5
+                                c+OO14iIOCGDL9zUkiIjxWR59Fkv8l9B7c+EXvq/9WW/UmXQGsna7fXM/L1LCcO/
+                                37l9oCE6VwKBgEOP0flGg+FYk7AY6GzrOtJt28b9zhXOctjGNcASN02zE3RMbyCX
+                                FY5LlQqxcb0swPOlOT+NMM/9lnztrg5BCYB5Zywg/u1r26BgjI3DR3cbT4emzjjX
+                                V8sg79pLEyNgZEJ23SnfclprA2f48DLFw5zNX0cPIAjyqlPfR+vk8UWHAoGABfOU
+                                C091Lb4I9X7ER48hB53c+Ac83ZH7e4VGGIJlrQF7WoLeFEEtNLzA8QZbJU9nsPEY
+                                prxUt9Z1xRhLFq9MYXFOkFRlChrbT/5Z6zhz16wwJDAyRFT2E51r/UyIsJpUJ3NC
+                                xCF/yVlvqctL4l9w/ArRLOVHRhkhR3lgboqrk80CgYBnkOZJyIHFEWcg9LpKH4UL
+                                oIEuC/8sp8lkfPpbT0N9FJKY1emx3NzqVH+1HvlJsGQtxlVU3IFjnQ+0KMptV7LL
+                                PahscJh4MbSUuBKV+fxOOQO6sLldR/Qcb9jw43G5CHvN+mDKNKwNaruo8OT4EaNH
+                                umLzFYlCY5KEjHPy31VtLA==
+                                -----END PRIVATE KEY-----'
                               type: string
                             valueFrom:
                               description: Source for the environment variable's value.
